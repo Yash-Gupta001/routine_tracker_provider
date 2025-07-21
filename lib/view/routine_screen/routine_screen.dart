@@ -56,7 +56,7 @@ class RoutineScreen extends StatelessWidget {
               itemCount: routineProvider.routine.length,
               itemBuilder: (ctx, index) {
                 final routine = routineProvider.routine[index];
-                return GestureDetector(
+                return InkWell(
                   onLongPress: () {
                     routineProvider.removeRoutine(routine.id);
                   },
